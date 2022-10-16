@@ -205,7 +205,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 ```
 8. 
 ```bash
-root@ansibleserv:~/ansible/playbook# ansible-playbook -i inventory/prod.yml site.yml --check --ask-pass
+root@ansibleserv:~/ansible/playbook# ansible-playbook -i inventory/prod.yml site.yml --diff --ask-pass
 SSH password:
 
 PLAY [Install Clickhouse] ***********************************************************************************************************************
@@ -227,7 +227,7 @@ ok: [clickhouse-01]
 TASK [Flush handlers] ***************************************************************************************************************************
 
 TASK [Create database] **************************************************************************************************************************
-skipping: [clickhouse-01]
+ok: [clickhouse-01]
 
 PLAY [Install Vector] ***************************************************************************************************************************
 
@@ -241,7 +241,7 @@ TASK [Install Vector packages] *************************************************
 ok: [vector-01]
 
 PLAY RECAP **************************************************************************************************************************************
-clickhouse-01              : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=1    ignored=0
+clickhouse-01              : ok=4    changed=0    unreachable=0    failed=0    skipped=0    rescued=1    ignored=0
 vector-01                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 ```
 
