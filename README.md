@@ -247,6 +247,7 @@ vector-01                  : ok=3    changed=0    unreachable=0    failed=0    s
 
 9. 
 https://github.com/Valdem88/dev-17_ansible-02-playbook-yakovlev_vs/blob/main/step/readme.md
+
 10.
 https://github.com/Valdem88/dev-17_ansible-02-playbook-yakovlev_vs/blob/main/playbook/site.yml
 
